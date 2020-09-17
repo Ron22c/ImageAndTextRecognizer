@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E608EAD25138BA900E5D9B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E608EAC25138BA900E5D9B2 /* GoogleService-Info.plist */; };
+		2E89413025139AD800162CCC /* welcome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E89412F25139AD800162CCC /* welcome.jpg */; };
 		2EAD3BBA240539F7006889ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD3BB9240539F7006889ED /* AppDelegate.swift */; };
 		2EAD3BBC240539F7006889ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD3BBB240539F7006889ED /* SceneDelegate.swift */; };
 		2EAD3BBE240539F7006889ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD3BBD240539F7006889ED /* ViewController.swift */; };
@@ -15,12 +17,13 @@
 		2EAD3BC6240539F8006889ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAD3BC4240539F8006889ED /* LaunchScreen.storyboard */; };
 		2EAD3BCE24053B2E006889ED /* FirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD3BCD24053B2E006889ED /* FirebaseViewController.swift */; };
 		2EAD3BD024053DE7006889ED /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD3BCF24053DE7006889ED /* Inceptionv3.mlmodel */; };
-		2EAD3BD52405423D006889ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EAD3BD42405423D006889ED /* GoogleService-Info.plist */; };
 		6A06557607725AD65D0AB4E1 /* Pods_CoreMLFireBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BD79F19562DCEF9C3E1AD9 /* Pods_CoreMLFireBase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2EAD3BB6240539F7006889ED /* CoreMLFireBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLFireBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E608EAC25138BA900E5D9B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E89412F25139AD800162CCC /* welcome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcome.jpg; sourceTree = "<group>"; };
+		2EAD3BB6240539F7006889ED /* PokktImageRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokktImageRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EAD3BB9240539F7006889ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EAD3BBB240539F7006889ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2EAD3BBD240539F7006889ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,7 +33,6 @@
 		2EAD3BC7240539F8006889ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EAD3BCD24053B2E006889ED /* FirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewController.swift; sourceTree = "<group>"; };
 		2EAD3BCF24053DE7006889ED /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
-		2EAD3BD42405423D006889ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8E7C27D8301D80BB3792AD5B /* Pods-CoreMLFireBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreMLFireBase.debug.xcconfig"; path = "Target Support Files/Pods-CoreMLFireBase/Pods-CoreMLFireBase.debug.xcconfig"; sourceTree = "<group>"; };
 		99BD79F19562DCEF9C3E1AD9 /* Pods_CoreMLFireBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreMLFireBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50A1CA496B628CF0945CE84 /* Pods-CoreMLFireBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreMLFireBase.release.xcconfig"; path = "Target Support Files/Pods-CoreMLFireBase/Pods-CoreMLFireBase.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E89413125139ADE00162CCC /* pictures */ = {
+			isa = PBXGroup;
+			children = (
+				2E89412F25139AD800162CCC /* welcome.jpg */,
+			);
+			path = pictures;
+			sourceTree = "<group>";
+		};
 		2EAD3BAD240539F7006889ED = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +71,7 @@
 		2EAD3BB7240539F7006889ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2EAD3BB6240539F7006889ED /* CoreMLFireBase.app */,
+				2EAD3BB6240539F7006889ED /* PokktImageRecognizer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,11 +79,12 @@
 		2EAD3BB8240539F7006889ED /* CoreMLFireBase */ = {
 			isa = PBXGroup;
 			children = (
-				2EAD3BD42405423D006889ED /* GoogleService-Info.plist */,
+				2E89413125139ADE00162CCC /* pictures */,
 				2EAD3BD32405415F006889ED /* view */,
 				2EAD3BD22405414D006889ED /* controller */,
 				2EAD3BD12405413E006889ED /* model */,
 				2EAD3BC2240539F8006889ED /* Assets.xcassets */,
+				2E608EAC25138BA900E5D9B2 /* GoogleService-Info.plist */,
 				2EAD3BC7240539F8006889ED /* Info.plist */,
 			);
 			path = CoreMLFireBase;
@@ -121,7 +132,6 @@
 				8E7C27D8301D80BB3792AD5B /* Pods-CoreMLFireBase.debug.xcconfig */,
 				A50A1CA496B628CF0945CE84 /* Pods-CoreMLFireBase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,7 +155,7 @@
 			);
 			name = CoreMLFireBase;
 			productName = CoreMLFireBase;
-			productReference = 2EAD3BB6240539F7006889ED /* CoreMLFireBase.app */;
+			productReference = 2EAD3BB6240539F7006889ED /* PokktImageRecognizer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -187,7 +197,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EAD3BC6240539F8006889ED /* LaunchScreen.storyboard in Resources */,
-				2EAD3BD52405423D006889ED /* GoogleService-Info.plist in Resources */,
+				2E89413025139AD800162CCC /* welcome.jpg in Resources */,
+				2E608EAD25138BA900E5D9B2 /* GoogleService-Info.plist in Resources */,
 				2EAD3BC3240539F8006889ED /* Assets.xcassets in Resources */,
 				2EAD3BC1240539F7006889ED /* Main.storyboard in Resources */,
 			);
@@ -339,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -393,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -409,13 +420,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = ZMVFPC5AQ8;
 				INFOPLIST_FILE = CoreMLFireBase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cranajit.CoreMLFireBase;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pokkt.imagerecogniser;
+				PRODUCT_NAME = PokktImageRecognizer;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -427,13 +442,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = ZMVFPC5AQ8;
 				INFOPLIST_FILE = CoreMLFireBase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cranajit.CoreMLFireBase;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pokkt.imagerecogniser;
+				PRODUCT_NAME = PokktImageRecognizer;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
